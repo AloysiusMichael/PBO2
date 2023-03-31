@@ -18,7 +18,7 @@ public class Document {
     }
     
     public void open(){
-        System.out.println("Buka Document"+ this.filename);
+        System.out.println("Buka Document "+ this.filename);
     }
 
     public String getData() {

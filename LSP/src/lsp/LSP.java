@@ -15,12 +15,15 @@ public class LSP {
      */
     public static void main(String[] args) {
        Document file1 = new Document("Data 1","Siswa 1");
-       Document file2 = new Document ("Data 2","Siswa 2");
+       Document file2 = new Document ("Data 2","Siswa 2"); 
+       WriteableDocument file3 = new WriteableDocument("File 3", "Siswa 3");
        
-       WriteableDocument file3 = new WriteableDocument(s);
-       setDocuments (file1);
-       setWriteableDocuments(file1);
-       
+       Project project1 = new Project ();
+       project1.setDocuments (file1);
+       project1.setDocuments (file2);
+       project1.setWriteableDocuments(file3);
+       project1.openAll();
+       project1.saveAll();
     }
     
 }
